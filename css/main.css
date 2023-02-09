@@ -1,0 +1,532 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{color: #333; text-decoration: none;}
+body{
+    font-family: 'LINESeedKR-Bd';
+    font-size: 16px;
+    line-height: 32px;
+    color: #333;
+    min-width: 1320px;
+}
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+/*header*/
+#header{
+    width: 1320px;
+    height: 100px;
+    margin: 0 auto;
+}
+.container{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.gnb_left{
+    float: left;
+    padding-top: 30px;
+}
+.gnb_left> li{
+    float: left;
+    position: relative;
+}
+.gnb_left> li> a{
+    display: block;
+    padding: 6px 10px 26px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.gnb_left li:hover .submenu{
+    display: block;
+}
+/*submenu*/
+.submenu{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: white;
+}
+.submenu li a{
+    display: block;
+    text-align: center;
+}
+.logo{
+    display: inline;
+}
+.logo img{ 
+    padding: 15px;
+    margin-left: 166px;
+}
+.gnb_right{
+    float: right;
+    padding-top: 30px;
+}
+.gnb_right> li{
+    float: left; 
+    
+}
+.gnb_right> li> a{
+    display: block;
+    padding: 6px 10px;
+    
+}
+.gnb_right> li> a:hover{
+    display: block;
+}
+/*popup*/
+.popup_open{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.popup{
+    position: absolute;
+    z-index: 99;
+    top: 38px;
+    right: -118%;
+    box-sizing: border-box;
+}
+input.popup_input::placeholder{
+    color: rgb(0, 0, 0);
+    padding-left: 2px;
+    font-size: 12px;
+}
+.close_btn{
+    display: inline-block;
+    color: #fff;
+    background-color: #000000;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: -50px;
+    bottom: 4px;
+}
+/*banner*/
+/*text_box*/
+.text_box{
+    color: white;
+    position: absolute;
+    top: 80px;
+    right: 200px;
+    text-align: right;
+}
+h3{
+    font-size: 37px;
+    padding: 20px 0;
+}
+h3.left{
+    text-align: left;
+    padding: 35px 55px;
+}
+h1{
+    font-size: 85px;
+    font-weight: bold;
+}
+p{
+    font-size: 33px;
+    line-height: 40px;
+}
+.banner_btn{
+    padding-top: 20px;
+    padding-left: 500px;
+}
+.btn {
+    color: black;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 140px;
+    padding: 10px;
+    text-align: center;
+}
+/*text_box1*/
+.text_box1{
+    color: white;
+    position: absolute;
+    top: 70px;
+    left: 200px;
+    text-align: left;
+}
+h3{
+    font-size: 37px;
+    padding: 20px 0;
+}
+.text_box1 h3.left{
+    text-align: right;
+    padding: 35px 44px;
+}
+.text_box1 h1{
+    font-size: 85px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+p{
+    font-size: 33px;
+    line-height: 40px;
+}
+.text_box1 .banner_btn{
+    padding: 20px 0 0; 
+}
+/*text_box2*/
+.text_box2{
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: 620px;
+}
+.text_box2 h3.left{
+    text-align: center;
+    padding: 30px 42px;
+    margin-bottom: 10px;
+}
+.text_box2 p{
+    margin-top: 40px;
+}
+.text_box2 .banner_btn{
+   position: absolute;
+   top: 220px;
+   right: 250px;
+}
+.banner4{
+    position: relative;
+}
+.banner4 .text_box3 img{
+    position: absolute;
+    width: 585px;
+    height: 225px;
+    top: 40px;
+    right: 650px;
+}
+.text_box3 {
+    color: white;
+    margin-top: 170px;
+}
+.text_box3 .banner_btn{
+    position: relative;
+}
+.text_box3 .banner_btn .btn{
+    width: 180px;
+    color: black;
+    position: absolute;
+    top: 20px;
+    right: 160px;
+}
+/*recommend*/
+#container{/*제일큰박스*/
+    width: 1320px;
+    height: 600px;
+    margin: 0px auto;
+    display: flex;/*컨테이너지정*/
+}
+.inner{
+    justify-content: flex-start;/*주축의 시작점*/
+    margin-right: 100px;/*옆 박스 여백*/
+}
+.hashtags-wrap{
+    position: relative;/*상대좌표*/
+    z-index: 2;
+}
+.hashtags{
+    position: absolute;/*절대좌표 부모기준*/
+    top: 130px;
+    left: 227px;
+    display: flex;/*컨테이너지정*/
+    align-items: center;/*백그라운드여백*/
+    flex-direction: column;/*플렉스 방향 세로*/
+    z-index: 3;
+}
+.hashtags .hash {
+    display: block;/*block 요소만들기*/
+    height: 32px;
+    padding: 0 10px;
+    margin: 10px;
+    line-height: 32px;
+    border-radius: 20px;
+    background: #fff;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+}
+.hashtags img{
+    display: block;/*img가 인라인요소*/
+}
+.img_wrap{
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 35px;
+}
+.img_wrap a{
+    width: 555px;
+    height: 555px;
+    position: relative;
+    overflow: hidden;/* scale로 커진부분 내용안보이게!!!!*/
+}
+.img_wrap a img{
+    transition: transform 1s;
+}
+.img_wrap a img:hover{
+    transform: scale(1.2);
+}
+/*swiper*/
+/*best_seller*/
+/*text*/
+.swipers{
+    margin-top: 50px;
+}
+.swipers h2{
+    text-align: left;
+    font-size: 32px;
+}
+.sub_title{
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+/*best_seller*/
+/*img_div*/
+/*공통꾸미기*/
+.best-seller li{
+    float: left;
+    margin-right: 24px;
+}
+.h4_title{
+    font-size: 12px;
+    line-height: 14px;
+}
+.best_img img{
+    width: 184px;
+    height: 184px;
+    position: relative;
+    padding-top: 10px;
+}
+/*best_seller_icon*/
+.posi1{
+    position: relative;
+}
+.position1{
+    position: absolute;
+    top: 122px;
+    right: 9px;
+    width: 22px;
+}
+.position1 img{
+    height: 20px;
+}
+/*main_title*/
+.main_title{
+    font-size: 32px;
+    text-align: center;
+    padding-top: 140px;
+}
+.campain_title{
+    font-size: 32px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+/*best_review*/
+#container_review{/*제일큰박스*/
+    width: 1320px;/*홈페이지 기본값*/
+    height: 530px;
+    margin: 0px auto;
+    display: flex;/*컨테이너지정*/
+}
+.review h2{
+    text-align: left;
+    font-size: 32px;
+}
+.star{
+    margin-bottom: 10px;
+}
+.sub_title{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.review_title{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+}
+/*best_review_icon*/
+.posi{
+    position: relative;
+}
+.position {
+    position: absolute;
+    z-index: 9;
+    width: 27px;
+    top: 219px;
+    left: 251px;
+}
+.position img{
+    padding-bottom: 10px;
+}
+.jb-a img{
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+}
+.jb-a {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative
+}
+.jb-c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.jb-c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.jb-a:hover .jb-c {
+    display: block;
+}
+
+.jb-c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+
+}
+.jb-a:hover .jb-c {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.best_reiview li{
+    float: left;
+    margin-right: 24px;
+}
+/*campain*/
+#campain{
+    background-image: url(../img/main/main_campain_earth.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.campain_box{
+       position: relative;
+}
+#campain h1{
+    font-size: 56px;
+    color: white;
+    position: absolute;
+    top: 120px;
+    right: 200px;
+    line-height: 60px;
+    text-align: right;
+}
+#campain h4{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 240px;
+   right: 200px;
+}
+/*footer*/
+#footer_wrap{
+    background-color: black;
+    height: 400px;
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+.footer{
+    width: 1130px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    color: rgb(201, 201, 201);
+    box-sizing: border-box;
+}
+.footer p{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 16px;
+}
+/*footer_left*/
+.left_box{
+    width: 480px;
+    height: 300px;
+    float: left;
+    text-align: center;
+    margin-right: 60px;
+}
+.sns_icon li{
+    float: left;
+}
+.sns_icon li a{
+    padding-left: 10px;
+}
+input{
+    padding: 5px;
+    display: inline-block;
+    vertical-align: middle;/*우편번호 inline 하단에 맞춰져서 middle로 정렬*/
+    outline: none;/*눌러도 아웃라인 안생기는거*/
+}
+input::placeholder{/*placeholder의 속성꾸미기*/
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+}
+.sub{
+    margin: 20px 0 30px;
+}
+.left_box_left{
+    float: left;
+    width: 50%;
+}
+.left_box_right{
+    float: right;
+    width: 50%;
+}
+/*footer_right*/
+.right_box{
+    width: 480px;
+    height: 300px;
+    float: left;
+    text-align: center;
+
+}
+.sub{
+    margin: 10px 0 30px;
+    font-weight: 500;
+}
+.right_box ul{
+    padding-top: 10px;
+    font-weight: 500;
+}
+.right_box ul li{
+   display: inline-block;
+}
+.right_box ul li a{
+    color: white;
+    padding-right: 83px;    
+}
+.strong{ 
+    padding: 20px 0;
+    font-weight: 700;
+}
+.email{
+    font-size: 15px;    
+    padding: 20px 0;
+    font-weight: 700;
+}

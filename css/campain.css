@@ -1,0 +1,270 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{color: #333; text-decoration: none;}
+body{
+    font-family: 'LINESeedKR-Bd';
+    font-size: 16px;
+    line-height: 32px;
+    color: #333;
+    min-width: 1320px;
+}
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+/*header*/
+#header{
+    width: 1320px;
+    height: 100px;
+    margin: 0 auto;
+}
+.container{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.gnb_left{
+    float: left;
+    padding-top: 30px;
+}
+.gnb_left> li{
+    float: left;
+    position: relative;
+}
+.gnb_left> li> a{
+    display: block;
+    padding: 6px 10px 26px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.gnb_left li:hover .submenu{
+    display: block;
+}
+/*submenu*/
+.submenu{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: white;
+}
+.submenu li a{
+    display: block;
+    text-align: center;
+}
+.logo{
+    display: inline;
+}
+.logo img{ 
+    padding: 15px;
+    margin-left: 166px;
+}
+.gnb_right{
+    float: right;
+    padding-top: 30px;
+}
+.gnb_right> li{
+    float: left; 
+    
+}
+.gnb_right> li> a{
+    display: block;
+    padding: 6px 10px;
+    
+}
+.gnb_right> li> a:hover{
+    display: block;
+}
+/*popup*/
+.popup_open{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.popup{
+    position: absolute;
+    z-index: 99;
+    top: 38px;
+    right: -118%;
+    box-sizing: border-box;
+}
+input.popup_input::placeholder{
+    color: rgb(0, 0, 0);
+    padding-left: 2px;
+    font-size: 12px;
+}
+.close_btn{
+    display: inline-block;
+    color: #fff;
+    background-color: #000000;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: -50px;
+    bottom: 4px;
+}
+/*campain_wrap*/
+#campain_wrap{
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+img.campain {
+    display: block;
+}
+img.scroll{
+    display: block;
+    position: absolute;
+    top: 557px;
+    right: 600px;
+    z-index: 99;
+}
+img.live_scroll{
+    display: block;
+    position: absolute;
+    top: 373px;
+    right: 103px;
+    padding: 15px;
+    z-index: 99;
+    border-radius: 50%;
+    background-color: #EE3724;
+}
+.sub_wrap{
+    width: 1200px;
+    height: 1790px;
+    background-color: white;
+    position: absolute;
+    top: 1080px;
+    left: 60px;
+}
+.live_sub_wrap{
+    border: #EE3724 solid 6px ;
+    height: 1650px;
+}
+.sub_textbox{
+    text-align: center;
+    padding: 70px;
+}
+.sub_textbox h1{
+    font-size: 33px;
+    line-height: 50px;
+}
+.sub_textbox h3{
+    padding: 30px;
+}
+img.box{
+    margin-top: 50px;
+    margin-left: 32px;
+}
+img.box1{
+    margin-top: 50px;
+    margin-left: 62px;
+}
+.text{
+    padding-top: 70px;
+}
+.pay{
+    padding-top: 50px;
+}
+img.live_icon{
+    margin-left: 520px;
+}
+/*footer*/
+#footer_wrap{
+    background-color: black;
+    height: 400px;
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+.footer{
+    width: 1130px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    color: rgb(201, 201, 201);
+    box-sizing: border-box;
+}
+.footer p{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 16px;
+}
+/*footer_left*/
+.left_box{
+    width: 480px;
+    height: 300px;
+    float: left;
+    text-align: center;
+    margin-right: 60px;
+}
+.sns_icon li{
+    float: left;
+}
+.sns_icon li a{
+    padding-left: 10px;
+}
+input{
+    padding: 5px;
+    display: inline-block;
+    vertical-align: middle;/*우편번호 inline 하단에 맞춰져서 middle로 정렬*/
+    outline: none;/*눌러도 아웃라인 안생기는거*/
+}
+input::placeholder{/*placeholder의 속성꾸미기*/
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+}
+.sub{
+    margin: 20px 0 30px;
+}
+.left_box_left{
+    float: left;
+    width: 50%;
+}
+.left_box_right{
+    float: right;
+    width: 50%;
+}
+/*footer_right*/
+.right_box{
+    width: 480px;
+    height: 300px;
+    float: left;
+    text-align: center;
+
+}
+.sub{
+    margin: 10px 0 30px;
+    font-weight: 500;
+}
+.right_box ul{
+    padding-top: 10px;
+    font-weight: 500;
+}
+.right_box ul li{
+   display: inline-block;
+}
+.right_box ul li a{
+    color: white;
+    padding-right: 83px;    
+}
+.strong{ 
+    padding: 20px 0;
+    font-weight: 700;
+}
+.email{
+    font-size: 15px;    
+    padding: 20px 0;
+    font-weight: 700;
+}
