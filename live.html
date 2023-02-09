@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1320px, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/campain.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <!-- Demo styles -->
+    <a href="javascript:return false;"></a>
+    <!--popup-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!--fade_js-->
+      <script>AOS.init();</script>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	
+      <script src="js/jquery-1.12.3.js"></script>
+      <script src="js/script.js"></script>
+      <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+      </script>
+</head>
+<body>
+    <!--header-->
+    <div id="header">
+        <div class="container">
+            <ul class="gnb_left">
+                <li><a href="sub.html">PRODUCT</a>
+                    <ul class="submenu">
+                    <li><a href="perfume.html">향수</a></li>
+                    <li><a href="candle.html">캔들</a></li>
+                    <li><a href="hand.html">핸드크림</a></li>
+                    </ul>
+            </li>
+            <li><a href="dazzle.html">DAZZLE</a>
+                <ul class="submenu">
+                    <li><a href="dazzle.html">데즐이란</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </li>
+            <li><a href="campain.html">CAMPAIN</a>
+                <ul class="submenu">
+                    <li><a href="campain.html">데즐과 함께 
+                        <br>지구를 지켜요</a></li>
+                </ul>
+            </li>
+        </ul>
+            <h1 class="logo"><a href="index.html"><img src="img/main/main_logo.png" alt=""></a></h1>
+            <ul class="gnb_right">
+                <li><a href="live.html">쇼핑라이브</a></li>
+                <li class="popup_open"><a href="#">찾기</a>
+                    <div class="popup">
+                        <input class="popup_input" type="text" style="width: 210px; height: 14px; border: 1px #000000 solid;
+                            background-color: #ffffff ;" placeholder="데즐의 상품을 찾아보세요">
+                        <button class="close_btn">닫기</button>
+                    </div>
+                </li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+        </div>
+    </div><!--header_e-->
+    <div id="campain_wrap">
+        <img class="campain" src="img/main/main_live_poster.png" alt="">
+        <div class="hz" id="section1">
+        <a href="#section2"><img class="scroll live_scroll" src="img/main/main_campain_scoll.png" alt=""></a>
+        </div>
+        <div class="sub_wrap live_sub_wrap">
+            <div class="sub_textbox main" id="section2">
+                <h1>3.31(금) 밤 8시간 단, 2시간!
+                    <br>네이버 라이브 <span>데즐 에코백</span> 증정!</h1>
+                    <h3>
+                        "구매하는 모든 고객님께 데즐 에코백 증정"
+                    </h3>
+                    <img class="box" src="img/main/main_live_ecobag.png" alt="">
+            </div>
+            <div class="sub_textbox">
+                <h1>방송시 다시없을 특별한 혜택
+                    <br>10%할인+5% <span>네이버페이</span> 적립!
+                    <h3>
+                        "특별한 라이브쇼핑가로 데즐상품을 만나보세요."
+                    </h3>
+                    <img class="box1" src="img/main/main_live_pay.png" alt="">
+                    <h1 class="pay">데즐 상품 10%할인과 함께 네이버페이 5%적립</h1>
+                </div>
+                <img class="live_icon" src="img/main/main_live_icon.png" alt="">
+        </div>
+    </div>
+    <div id="footer_wrap"><!--footer_wrap_s-->
+        <div class="footer">
+            <div class="left_box">
+                <input type="text" style="width: 450px; height: 40px;
+                    background-color: #222222 ;" placeholder="이메일 주소를 입력하세요">
+                <p class="sub">매주 월요일 오후 구독자님들을 위한 제품과 브랜드 이야기를 전해드립니다.
+                    <br>구독은 언제든지 해지할수있습니다.
+                </p>
+                <div class="left_box_left">
+                    <p>Customer center</p>
+                    <p>010-3731-0411</p>
+                    <p>제휴문의</p>
+                    <p class="email">minmingmine@dazzle.co.kr</p>
+                    <ul class="sns_icon">
+                        <li><a href="#"><img src="img/main/main_footer_insta.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/main/main_footer_youtube.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/main/main_footer_ch.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/main/main_footer_talk.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="left_box_right">
+                    <p>10:00~17:00</p>
+                    <p>점심시간:12:00~13:00</p>
+                    <p>휴무:주말 및 공휴일</p>
+                </div>
+            </div>
+            <div class="right_box">
+                <ul>
+                    <li><a href="#">데즐소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">MY PAGE</a></li>
+                </ul>
+                <p class="sub">
+                    부산광역시 남구 못골번영로 40번길 35 주식회사 데즐
+                </p>
+                <p>사이트 운영자: 주식회사 데즐</p>
+                <p>대표이사: 주승민</p>
+                <p>사업자 등록번호: 201-12-34567 사업자정보확인</p>
+                <p>통신판매업 신고번호: 2022-부산남구-12345</p>
+                <p>개인정보책임자: 주승민</p>
+                <p class="strong">COPYRIGHT@DAZZLEKOREA.CO.LTD.ALL RIGHTS RESSERVED</p>
+            </div>
+        </div><!--footer_wrap_e-->
+    </div>
+    </body>
+    </html>
+    

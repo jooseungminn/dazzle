@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1320px, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/shop.css">
+    <!--swiper-->
+    <!--swiper-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Demo styles -->
+    <a href="javascript:return false;"></a>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--popup-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!--header-->
+    <div id="header">
+        <div class="container">
+            <ul class="gnb_left">
+                <li><a href="sub.html">PRODUCT</a>
+                    <ul class="submenu">
+                    <li><a href="perfume.html">향수</a></li>
+                    <li><a href="candle.html">캔들</a></li>
+                    <li><a href="hand.html">핸드크림</a></li>
+                    </ul>
+            </li>
+            <li><a href="dazzle.html">DAZZLE</a>
+                <ul class="submenu">
+                    <li><a href="dazzle.html">데즐이란</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </li>
+            <li><a href="campain.html">CAMPAIN</a>
+                <ul class="submenu">
+                    <li><a href="campain.html">데즐과 함께 
+                        <br>지구를 지켜요</a></li>
+                </ul>
+            </li>
+        </ul>
+            <h1 class="logo"><a href="index.html"><img src="img/main/main_logo.png" alt=""></a></h1>
+            <ul class="gnb_right">
+                <li><a href="live.html">쇼핑라이브</a></li>
+                <li class="popup_open"><a href="#">찾기</a>
+                    <div class="popup">
+                        <input class="popup_input" type="text" style="width: 210px; height: 14px; border: 1px #000000 solid;
+                            background-color: #ffffff ;" placeholder="데즐의 상품을 찾아보세요">
+                        <button class="close_btn">닫기</button>
+                    </div>
+                </li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+        </div>
+    </div><!--header_e-->
+    <h2 class="main_title">
+        데즐찾기
+    </h2>
+<!--tap_box-->
+<div id="section"></div>
+<div class="tap_box">
+    <ul>
+        <li class="tap tablink" onclick="openBoard(event,'Board01')">SEOUL</li>
+        <li class="tap tablink" onclick="openBoard(event,'Board02')">BUSAN</li>
+        <li class="tap tablink" onclick="openBoard(event,'Board03')">JEJU</li>
+    </ul>
+</div>
+<!--tap 1_s-->
+<div id="Board01" class="box1_1	board" style="display: block;">
+    <div id="place">
+        <img src="img/main/main_shop_seoul.png" alt="">
+    <div class="text_box">
+        <h2>신세계 강남점</h2>
+        <div class="sub_box">
+        <p>운영시간: 10:30 ~ 20:30</p>
+        <p>전화: 02-3479-1704</p>
+        <p>주소: 서울특별시 서초구 신반포로 176</p>
+        </div>
+        <div class="btn_wrap"><a href="https://goo.gl/maps/yiR6XZYx8U6FbtoVA">
+            <p class="btn">매장찾기</p>
+        </a></div>
+        </div>
+    </div>
+</div><!--tap 1_e-->
+<!--tap 2_s-->
+<div id="Board02" class="box1_1	board" style="display:none;">
+    <div id="place">
+        <img src="img/main/main_shop_busan.png" alt="">
+    <div class="text_box">
+        <h2>롯데프리미엄아울렛 동부산점</h2>
+        <div class="sub_box">
+        <p>운영시간: 11:00 ~ 21:00</p>
+        <p>전화: 051-810-1234</p>
+        <p>주소: 부산광역시 기장군 기장읍 기장해안로 147</p>
+        </div>
+        <div class="btn_wrap"><a href="https://goo.gl/maps/jbX2krzcx3xiG9AV9">
+            <p class="btn">매장찾기</p>
+        </a></div>
+        </div>
+    </div>
+    </div> <!--tap 2_e-->
+</div>
+<!--tap 3_s-->
+<div id="Board03" class="box1_1	board" style="display:none;">
+    
+    <div id="place">
+        <img src="img/main/main_shop_jeju.png" alt="">
+    <div class="text_box">
+        <h2>HAN컬렉션 제주점</h2>
+        <div class="sub_box">
+        <p>운영시간: 09:00 ~ 22:00</p>
+        <p>전화: 064-795-0000</p>
+        <p>주소: 제주특별자치도 제주시 노연로 12 3-4F DREAM TOWER</p>
+        </div>
+        <div class="btn_wrap"><a href="https://goo.gl/maps/PyAtMQ5XykGxn6pV8">
+            <p class="btn">매장찾기</p>
+        </a></div>
+        </div>
+    </div>
+</div><!--tap 3_e-->
+    <div id="footer_wrap"><!--footer_wrap_s-->
+        <div class="footer">
+            <div class="left_box">
+                <input type="text" style="width: 450px; height: 40px;
+                    background-color: #222222 ;" placeholder="이메일 주소를 입력하세요">
+                <p class="sub">매주 월요일 오후 구독자님들을 위한 제품과 브랜드 이야기를 전해드립니다.
+                    <br>구독은 언제든지 해지할수있습니다.
+                </p>
+                <div class="left_box_left">
+                    <p>Customer center</p>
+                    <p>010-3731-0411</p>
+                    <p>제휴문의</p>
+                    <p class="email">minmingmine@dazzle.co.kr</p>
+                    <ul class="sns_icon">
+                        <li><a href="#"><img src="img/main/main_footer_insta.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/main/main_footer_youtube.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/main/main_footer_ch.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/main/main_footer_talk.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="left_box_right">
+                    <p>10:00~17:00</p>
+                    <p>점심시간:12:00~13:00</p>
+                    <p>휴무:주말 및 공휴일</p>
+                </div>
+            </div>
+            <div class="right_box">
+                <ul>
+                    <li><a href="#">데즐소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">MY PAGE</a></li>
+                </ul>
+                <p class="sub">
+                    부산광역시 남구 못골번영로 40번길 35 주식회사 데즐
+                </p>
+                <p>사이트 운영자: 주식회사 데즐</p>
+                <p>대표이사: 주승민</p>
+                <p>사업자 등록번호: 201-12-34567 사업자정보확인</p>
+                <p>통신판매업 신고번호: 2022-부산남구-12345</p>
+                <p>개인정보책임자: 주승민</p>
+                <p class="strong">COPYRIGHT@DAZZLEKOREA.CO.LTD.ALL RIGHTS RESSERVED</p>
+            </div>
+        </div><!--footer_wrap_e-->
+    </div>
+    </body>
+    </html>
+    

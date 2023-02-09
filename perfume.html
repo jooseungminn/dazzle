@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1320px, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sub_product.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Demo styles -->
+    <a href="javascript:return false;"></a>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--popup-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!--header-->
+    <div id="header">
+        <div class="container">
+            <ul class="gnb_left">
+                <li><a href="sub.html">PRODUCT</a>
+                    <ul class="submenu">
+                        <li><a href="perfume.html">향수</a></li>
+                        <li><a href="candle.html">캔들</a></li>
+                        <li><a href="hand.html">핸드크림</a></li>
+                    </ul>
+                </li>
+                <li><a href="dazzle.html">DAZZLE</a>
+                    <ul class="submenu">
+                        <li><a href="dazzle.html">데즐이란</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                    </ul>
+                </li>
+                <li><a href="campain.html">CAMPAIN</a>
+                    <ul class="submenu">
+                        <li><a href="campain.html">데즐과 함께
+                                <br>지구를 지켜요</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <h1 class="logo"><a href="index.html"><img src="img/main/main_logo.png" alt=""></a></h1>
+            <ul class="gnb_right">
+                <li><a href="live.html">쇼핑라이브</a></li>
+                <li class="popup_open"><a href="#">찾기</a>
+                    <div class="popup">
+                        <input class="popup_input" type="text" style="width: 210px; height: 14px; border: 1px #000000 solid;
+                            background-color: #ffffff ;" placeholder="데즐의 상품을 찾아보세요">
+                        <button class="close_btn">닫기</button>
+                    </div>
+                </li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+        </div>
+        <div id="page_wrap">
+            <div class="page_left">
+                <img src="img/main/product_main_perfume_my.png" alt="">
+            </div>
+            <div class="page_right">
+                <div class="text_box">
+                    <h3>PERFUME</h3>
+                    <h1>DAZZLE PERFUME(3종 택1)</h1>
+                    <h3>42000원(100ML)</h3>
+                    <h4>향선택</h4>
+                    <select option_product_no="1578" option_select_element="ec-option-select-finder" option_sort_no="1"
+                        option_type="F" item_listing_type="" option_title="향 선택" product_type="product_option"
+                        product_option_area="product_option_1578_0" name="option1" id="product_option_id1"
+                        class="ProductOption0" option_style="select" required="true">
+                        <option value="*" selected="" link_image="">- [필수] 옵션을 선택해 주세요 -</option>
+                        <option value="**" disabled="" link_image="">-------------------</option>
+                        <option value="" link_image="">MY UNIVERSE</option>
+                        <option value="" link_image="">SPACE DUST</option>
+                        <option value="" link_image="">OORT CLOUD</option>
+                    </select>
+                    <hr>
+                    <h4>TOTAL<span>42000원 (1개)</span></h4>
+                    <div class="wishlist">
+                        <a href="#">
+                            <h5>바로구매하기</h5>
+                        </a>
+                        <ul>
+                            <li><a href="#"><img src="img/main/product_shop_icon.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/main/product_like_icon.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--tap_box-->
+        <div id="section"></div>
+        <div class="tap_box">
+            <hr>
+            <ul>
+                <li class="tap tablink" onclick="openBoard(event,'Board01')">상품안내</li>
+                <li class="tap tablink" onclick="openBoard(event,'Board02')">제품후기</li>
+                <li class="tap tablink" onclick="openBoard(event,'Board03')">배송안내</li>
+                <li class="tap tablink" onclick="openBoard(event,'Board04')">상품필수정보</li>
+            </ul>
+            <hr>
+        </div>
+        <!--tap 1 상품정보s-->
+        <div id="Board01" class="box1_1	board" style="display: block;">
+            <div id="product">
+                <div class="banner">
+                    <img src="img/main/product_subbanner_perfume.png" alt="">
+                </div>
+                <p>특별한 향기를 지닌 당신을 모두 기억할 수 있도록
+                    <br>당신만의 시그니쳐 향수를 찾으세요.
+                </p>
+                <h3>PERFUME</h3>
+                <h1>DAZZLE PERFUME(3종 택1)</h1>
+                <div class="box1">
+                    <ul class="menu_box1">
+                        <li><img src="img/main/main_perfume_my.png" alt=""></li>
+                        <li><img src="img/main/main_perfume_space.png" alt=""></li>
+                        <li><img src="img/main/main_perfume_oort.png" alt=""></li>
+                    </ul>
+                    <ul class="text_box1">
+                        <li>MY UNIVERSE</li>
+                        <li>SPACE DUST</li>
+                        <li>OORT CLOUD</li>
+                    </ul>
+                </div>
+                <p>자리를 떠나도 향기는 오랜 시간 머물러 여운을 남기고,
+                    <br>그 순간에 담긴 추억과 경험들은 인생의 특별한 이야기로 엮어집니다.
+                    <br>향기는 당신보다 오랫동안 머물러 있습니다.
+                </p>
+                <!--MY UNIVERSE-->
+                <h3>마이유니버스</h3>
+                <h1>MY UNIVERSE</h1>
+                <ul class="box2">
+                    <li><img src="img/main/main_perfume_oort.png" alt=""></li>
+                    <li><img src="img/main/main_perfume_oort_hover.png" alt=""></li>
+                </ul>
+                <p>은하계 가득한 보랏빛 향수
+                    <br>감미로운 라벤더와 편안한 아로마테라피로
+                    <br>은은하면서 향기로운 라벤더 향을 느껴보세요
+                </p>
+                <ul class="box3">
+                    <li><img src="img/main/product_ingredient_lavender.png" alt="">
+                        <p>라벤더<br>편안한 무드에 도움</p>
+                    </li>
+                    <li><img src="img/main/product_ingredient_jasmine.png" alt="">
+                        <p>자스민<br>풍부하고 깊은 향기</p>
+                    </li>
+                    <li><img src="img/main/product_ingredient_flower.png" alt="">
+                        <p>일랑일랑 꽃<br>감미로운 꽃 향긋하고 달콤함</p>
+                    </li>
+                    <li><img src="img/main/product_ingredient_Tunka.png" alt="">
+                        <p>퉁카<br>달콤하고 포근한 향</p>
+                    </li>
+                </ul>
+                <p><strong>대표성분</strong> 라벤더 자스민 일랑일랑 꽃 퉁카
+                    <br><strong>전 성분 표기</strong> 에탄올, 정제수, 향료, 스페인자스민꽃추출물, 클레리오일, 일랑일랑꽃오일
+                    <br>알파-아이소메틸아이오논, 벤질벤조에이트, 부틸페닐메틸프로피오날, 제라니올, 리모넨, 리날룰, 글리세린, 벤질알코올
+                </p>
+                <!--SPACE DUST-->
+                <h3>스페이스 더스트</h3>
+                <h1>SPACE DUST</h1>
+                <ul class="box2">
+                    <li><img src="img/main/main_perfume_space.png" alt=""></li>
+                    <li><img src="img/main/main_perfume_space_hover.png" alt=""></li>
+                </ul>
+                <p>아름다운 은하계 먼지를 표현한 향수
+                    <br>수없이 많은 보랏빛 먼지들이 마구마구 모여 포근하고 따듯한 향을
+                    <br>간직한 SPACE DUST 독특하고 달콤한 오키드향을 느껴보세요
+
+                </p>
+                <ul class="box3">
+                    <li><img src="img/main/product_ingredient_basil.png" alt="">
+                        <p>바질<br>상쾌하고 향긋한 향기
+                            <br>스트레스나 불안감을 잠재워줌
+                        </p>
+                    </li>
+                    <li><img src="img/main/product_ingredient_okmos.png" alt="">
+                        <p>오크모스<br>편안한 향기 </p>
+                    </li>
+                    <li><img src="img/main/product_ingredient_neroli.png" alt="">
+                        <p>네롤리<br>은은한 꽃 향기</p>
+                    </li>
+                    <li><img src="img/main/product_ingredient_okid.png" alt="">
+                        <p>오키드<br>편안하고 독특한 향</p>
+                    </li>
+                </ul>
+                <p><strong>대표성분</strong> &nbsp;바질 오크모스 네롤리 오키드
+                    <br><strong>전 성분 표기</strong> &nbsp; 정제수, 향료, 바질오일, 네롤리 꽃 추출물, 오키드향료, 오크모스추출물에탄올,
+                    <br>알파-아이소메틸아이오논, 벤질벤조에이트, 부틸페닐메틸프로피오날, 제라니올, 리모넨, 리날룰, 글리세린, 벤질알코올
+                </p>
+
+                <!--OORT CLOUD-->
+                <h3>오르트 클라우드</h3>
+                <h1>OORT CLOUD</h1>
+                <ul class="box2">
+                    <li><img src="img/main/main_perfume_oort.png" alt=""></li>
+                    <li><img src="img/main/main_perfume_oort_hover.png" alt=""></li>
+                </ul>
+                <p>따뜻하지만 독특한 향을 가지고 있는 구름 향
+                    <br>사르르 녹을 거 같은 바닐라 향기와
+                    <br>가볍게 상큼한 베르가못의 향을 느껴보세요
+                </p>
+                <ul class="box3">
+                    <li><img src="img/main/product_ingredient_neroli.png" alt="">
+                        <p>네롤리<br>은은한 꽃 향기</p>
+                    </li>
+                    <li><img src="img/main/product_ingredient_okmos.png" alt="">
+                        <p>오크모스<br>편안한 향기 </p>
+                    </li>
+                    <li><img src="img/main/product_ingredient_vanila.png" alt="">
+                        <p>바닐라<br>부드럽고 편안한 향기</p>
+                    </li>
+                    <li><img src="img/main/product_ingredient_verga.png" alt="">
+                        <p>베르가못<br>스트레스를 해소하고 마음을 밝혀주는 향기</p>
+                    </li>
+                </ul>
+                <p><strong>대표성분</strong> &nbsp;바질 오크모스 네롤리 오키드
+                    <br><strong>전 성분 표기</strong> &nbsp; 정제수, 향료, 바질오일, 네롤리 꽃 추출물, 오키드향료, 오크모스추출물에탄올,
+                    <br>알파-아이소메틸아이오논, 벤질벤조에이트, 부틸페닐메틸프로피오날, 제라니올, 리모넨, 리날룰, 글리세린, 벤질알코올
+                </p>
+                <div class="sub_wrap">
+                    <div class="sub_textbox">
+                        <h1>Good To Know</h1>
+                        <img class="box1" src="img/main/main_campain_began.png" alt="">
+                        <div class="text">
+                            <p>동물성 원료를 전혀 포함하지 않은 영국 비건 협회 인증 제품
+                                <br>꿀, 라놀린(양털 추출물)을 제외한 동물성 원료를 포함하지 않은 비건 액션의 인증마크
+                                <br>동물성 원료를 포함하지 않은 제품으로 비건에게 적합한 국제비건인증원 인증 마크
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--tap 1 상품정보e-->
+        <!--tap 2 review_s-->
+        <div id="Board02" class="box1_1	board" style="display:none;">
+            <div class="review_wrap">
+                <h6>총 4개의 사진후기</h6>
+                <ul class="review_img">
+                    <li><img src="img/main/product_review_perfume1.png" alt=""></li>
+                    <li><img src="img/main/product_review_perfume2.png" alt=""></li>
+                    <li><img src="img/main/product_review_perfume3.png" alt=""></li>
+                    <li><img src="img/main/product_review_perfume4.png" alt=""></li>
+                </ul>
+                <ul class="review_text">
+                    <li>
+                        <img src="img/main/main_icon_4star.png" alt="">
+                        <p>스페이스 더스트 향 유니크하고 용량도 많고 되게 좋아요
+                            <span>2022.12.12</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/main/main_icon_5star.png" alt="">
+                        <p class="padd">마이유니버스 향 구매했는데 부드럽고 유니크해요
+                            <span>2022.12.12</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/main/main_icon_5star.png" alt="">
+                        <p class="padd">조금만 뿌려도 향이 오래가서 유통기한 걱정이 없어요
+                            <span>2022.12.12</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/main/main_icon_4star.png" alt="">
+                        <p>비오는날에는 무조건 오르트클라우드
+                            <span>2022.12.12</span>
+                        </p>
+                    </li>
+                </ul>
+            </div> <!--tap 2 review_e-->
+        </div>
+        <!--tap 3 delivery_s-->
+        <div id="Board03" class="box1_1	board" style="display:none;">
+            <h6>배송정보</h6>
+            <table>
+                <tr>
+                    <th>배송 방법</th>
+                    <td>택배</td>
+                </tr>
+                <tr>
+                    <th>배송지역</th>
+                    <td>전국지역</td>
+                </tr>
+                <tr>
+                    <th>배송비용</th>
+                    <td>3.000원</td>
+                </tr>
+                <tr>
+                    <th>배송 기간</th>
+                    <td>1일 ~ 5일</td>
+                </tr>
+                <tr>
+                    <th>배송 안내</th>
+                    <td>1일 ~ 5일</td>
+                </tr>
+                <tr>
+                    <th>배송 안내</th>
+                    <td> 평일 오전 9시까지 입금 확인되는 주문 건에 한하여 당일 출고 되며,
+                        <br>상품종류에 따라 배송이 지연 될 수 있습니다.(주말 및 공휴일 제외)
+                        <br>상품종류에 따라 배송이 지연 될 수 있습니다.(주말 및 공휴일 제외)
+                        <br>※ 배송준비중 상태에서 2시이후의 취소는 불가합니다. (패킹완료 상태로 취소불가)
+                        <br>도서산간지역은 별도 추가요금이 발생할 수 있습니다.
+                        <br>발송일 기준 1~5일정도 소요되며 지역에 따라 차이가 있을 수 있습니다. (주말 및 공휴일, 도서산간지역 제외)
+                    </td>
+                </tr>
+                <tr>
+                    <th>지정택배사</th>
+                    <td>cj대한통운</td>
+                </tr>
+            </table>
+        </div><!--tap 3 delivery_e-->
+        <!--tap 4 information_e-->
+        <div id="Board04" class="box1_1	board" style="display:none;">
+            <h6>상품필수정보</h6>
+            <table>
+                <tr>
+                    <th>용량/중량</th>
+                    <td>100ml</td>
+                </tr>
+                <tr>
+                    <th>제품 주요 사양</th>
+                    <td>모든 피부용</td>
+                </tr>
+                <tr>
+                    <th>사용기한</th>
+                    <td>이 제품의 최적의 사용기한은 제조일자로부터 48개월입니다. 당사의 쇼핑몰에서는 제조년월일이 가장 빠른 상품부터 선출고 진행되고 있으며, 제품의 입출고가 빈번하여 온라인상에
+                        상세 제조년월일 기재가 어려운 점 양해 바랍니다.수령하신 상품에 부착된 라벨에 제조일자가 일/월/년의 순으로 기재되어 개별 확인이 가능합니다. 추가 문의는 고객센터
+                        010-3731-0411 로 문의주시면 상세히 안내 드리겠습니다.</td>
+                </tr>
+                <tr>
+                    <th>사용방법</th>
+                    <td>옷에 직접 닿지 않도록 피부 위에 살포시 뿌려주세요</td>
+                </tr>
+                <tr>
+                    <th>제조사</th>
+                    <td>-원재료 제조원:DAZZLE Ltd
+                        <br>-책임판매업자:(주)데즐 코리아 부산광역시 남구 못골번영로 40번길 35
+                        <br>www.dazzlekorea.co.ltd
+                    </td>
+                </tr>
+                <tr>
+                    <th>제조국</th>
+                    <td>한국</td>
+                </tr>
+                <tr>
+                    <th>주요성분</th>
+                    <td>상세페이지 참조</td>
+                </tr>
+                <tr>
+                    <th>식품의약품안전청 심사 필유무</th>
+                    <td>식품의약품안전처 심사 대상 아님</td>
+                </tr>
+                <tr>
+                    <th>사용상 주의사항</th>
+                    <td>1. 화장품 사용 시 또는 직사광선에 의하여 사용부위가 붉은 반점, 부어오름,
+                        <br>가려움증 등의 이상 증상이나 부작용 우려 등이 있는 경우 전문의 등과 상담할 것
+                        <br>2. 상처가 있는 부위 등에는 사용을 자제할 것
+                        <br>3. 보관 및 취급상의 주의사항
+                        <br>가) 어린이의 손이 닿지 않는 곳에 보관할 것
+                        <br>나) 직사광선을 피해서 보관할 것
+                        <br>4. 눈에 들어갔을 때에는 물로 씻어내고, 이상이 있는 경우에는 전문의와 상담할 것
+                    </td>
+                </tr>
+                <tr>
+                    <th>품질보증기준</th>
+                    <td>공정거래위원회 고시 소비자분쟁해결기준에 의거 교환 또는 보상 받을 수 있습니다.</td>
+                </tr>
+                <tr>
+                    <th>소비자상담 전화번호</th>
+                    <td>010-3731-0411</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="footer_wrap"><!--footer_wrap_s-->
+        <div class="footer">
+            <div class="left_box">
+                <input type="text" style="width: 450px; height: 40px;
+                        background-color: #222222 ;" placeholder="이메일 주소를 입력하세요">
+                <p class="sub">매주 월요일 오후 구독자님들을 위한 제품과 브랜드 이야기를 전해드립니다.
+                    <br>구독은 언제든지 해지할수있습니다.
+                </p>
+                <div class="left_box_left">
+                    <p>Customer center</p>
+                    <p>010-3731-0411</p>
+                    <p>제휴문의</p>
+                    <p class="email">minmingmine@dazzle.co.kr</p>
+                    <ul class="sns_icon">
+                        <li><a href="#"><img src="img/main/main_footer_insta.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/main/main_footer_youtube.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/main/main_footer_ch.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/main/main_footer_talk.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="left_box_right">
+                    <p>10:00~17:00</p>
+                    <p>점심시간:12:00~13:00</p>
+                    <p>휴무:주말 및 공휴일</p>
+                </div>
+            </div>
+            <div class="right_box">
+                <ul>
+                    <li><a href="#">데즐소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">MY PAGE</a></li>
+                </ul>
+                <p class="sub">
+                    부산광역시 남구 못골번영로 40번길 35 주식회사 데즐
+                </p>
+                <p>사이트 운영자: 주식회사 데즐</p>
+                <p>대표이사: 주승민</p>
+                <p>사업자 등록번호: 201-12-34567 사업자정보확인</p>
+                <p>통신판매업 신고번호: 2022-부산남구-12345</p>
+                <p>개인정보책임자: 주승민</p>
+                <p class="strong">COPYRIGHT@DAZZLEKOREA.CO.LTD.ALL RIGHTS RESSERVED</p>
+            </div>
+        </div><!--footer_wrap_e-->
+    </div>
+</body>
+
+</html>
